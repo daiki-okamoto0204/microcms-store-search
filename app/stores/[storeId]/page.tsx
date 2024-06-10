@@ -16,7 +16,7 @@ const Page = async (props: Props) => {
 		notFound();
 	}
 
-  const center = { lat: 35.0088831, lng: 135.758829 }
+  const center = { lat: Number(store.lat), lng: Number(store.lng) }
   const positions = [{lat: Number(store.lat), lng: Number(store.lng)}]
 
   return (
